@@ -1,0 +1,18 @@
+.menu {
+    background: rgb(213, 248, 212);
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    border-right: solid 1px black;
+}
+
+.box-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 1px;
+    height: 10vh;
+    border-bottom: solid 1px black;
+}

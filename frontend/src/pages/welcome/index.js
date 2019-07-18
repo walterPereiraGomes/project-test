@@ -1,25 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './index.css';
 
-import HelloComponent from 'Components/HelloComponent';
+import HeaderComponent from 'Components/HeaderComponent';
 import InputFile from 'Components/InputFileComponent';
+import Menu from 'Components/MenuComponent';
+import ListagemArquivos from 'Components/ListArquivosComponent';
 
-class Welcome extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      message: 'Bom dia',
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <HelloComponent message={this.state.message} />
-        <InputFile />
-      </div>
-
-    );
-  }
-}
+const Welcome = () => (
+  <div>
+    <HeaderComponent />
+    <div className="body">
+      <Menu />
+      {/* <InputFile /> */}
+      <ListagemArquivos />
+    </div>
+  </div>
+);
 
 export default Welcome;
