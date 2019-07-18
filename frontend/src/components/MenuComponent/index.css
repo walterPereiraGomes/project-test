@@ -1,18 +1,25 @@
 .menu {
-    background: rgb(213, 248, 212);
+    background: rgb(243,247,250);
     width: 15vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding-right: 0;
-    border-right: solid 1px black;
+    /* border-right: solid 1px rgb(177, 177, 177); */
+    box-shadow: 8px 0 7px -5px #808080;
 }
 
 .box-menu {
+    background: rgb(243,247,250);
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin: 1px;
     height: 10vh;
-    border-bottom: solid 1px black;
+    border: none;
+    border-bottom: solid 1px rgb(187, 186, 186);
+}
+
+.box-menu:hover {
+    background-color: white;
+    cursor: pointer;
 }

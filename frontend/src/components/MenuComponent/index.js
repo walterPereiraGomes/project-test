@@ -1,11 +1,29 @@
 import React from 'react';
 import './index.css';
 
-const HelloComponent = () => (
-  <div className="menu">
-    <h3 className="box-menu">Enviar</h3>
-    <h3 className="box-menu">Arquivos</h3>
-  </div>
-);
+class ListArquivos extends React.Component {
+  constructor(props) {
+    super(props);
+    this.goRouteUpload = this.goRouteUpload.bind(this);
+    this.goRouteListagem = this.goRouteListagem.bind(this);
+  }
 
-export default HelloComponent;
+  goRouteUpload() { //eslint-disable-line
+    this.props.location.push('/enviar'); //eslint-disable-line
+  }
+
+  goRouteListagem() { //eslint-disable-line
+    this.props.location.push('/listagem'); //eslint-disable-line
+  }
+
+  render() {
+    return (
+      <div className="menu">
+        <button type="button" className="box-menu" onClick={this.goRouteUpload}>Enviar</button>
+        <button type="button" className="box-menu" onClick={this.goRouteListagem}>Arquivos</button>
+      </div>
+    );
+  }
+}
+
+export default ListArquivos;

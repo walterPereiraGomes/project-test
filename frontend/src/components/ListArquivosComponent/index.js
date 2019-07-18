@@ -55,8 +55,7 @@ class ListArquivos extends React.Component {
                 <td>{arquivo.periodoInicial}</td>
                 <td>{arquivo.periodoFinal}</td>
               </tr>
-            ),
-            )}
+            ))}
           </tbody>
         </table>
       </div>
