@@ -13,6 +13,7 @@ class ListArquivos extends React.Component {
   }
 
   goRouteListagem() { //eslint-disable-line
+    console.log(this.props); //eslint-disable-line
     this.props.location.push('/listagem'); //eslint-disable-line
   }
 

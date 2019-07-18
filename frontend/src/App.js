@@ -7,8 +7,8 @@ import Routes from './routes';
 const App = () => (
   <div>
     <HeaderComponent />
-    <Menu />
     <BrowserRouter>
+      <Menu />
       <Routes />
     </BrowserRouter>
   </div>
