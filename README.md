@@ -1,0 +1,1 @@
+Template simples em react.
