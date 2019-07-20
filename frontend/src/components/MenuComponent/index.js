@@ -1,30 +1,21 @@
 import React from 'react';
-import './index.css';
+import { Link } from 'react-router-dom';
+import './menu.css';
 
-class ListArquivos extends React.Component {
-  constructor(props) {
-    super(props);
-    this.goRouteUpload = this.goRouteUpload.bind(this);
-    this.goRouteListagem = this.goRouteListagem.bind(this);
-  }
+const Menu = () => (
+  <div className="menu">
+    <ul className="no-padding">
+      <li className="box-menu flex-center">
+        <Link className="full-width-heigth flex-center" to="/">Home</Link>
+      </li>
+      <li className="box-menu">
+        <Link className="full-width-heigth flex-center" to="/enviar">Enviar</Link>
+      </li>
+      <li className="box-menu">
+        <Link className="full-width-heigth flex-center" to="/listagem">Arquivos</Link>
+      </li>
+    </ul>
+  </div>
+);
 
-  goRouteUpload() { //eslint-disable-line
-    this.props.location.push('/enviar'); //eslint-disable-line
-  }
-
-  goRouteListagem() { //eslint-disable-line
-    console.log(this.props); //eslint-disable-line
-    this.props.location.push('/listagem'); //eslint-disable-line
-  }
-
-  render() {
-    return (
-      <div className="menu">
-        <button type="button" className="box-menu" onClick={this.goRouteUpload}>Enviar</button>
-        <button type="button" className="box-menu" onClick={this.goRouteListagem}>Arquivos</button>
-      </div>
-    );
-  }
-}
-
-export default ListArquivos;
+export default Menu;

@@ -5,12 +5,45 @@
     justify-content: center;
     align-items: center;
 }
-.teste {
+.box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100px;
 }
 .titulo {
-    color: rgb(36, 151, 107);
+    color: rgb(60, 145, 112);
+}
+.btn{
+    display:inline-block;
+    border-radius:2em;
+    padding:0.3em 1.2em;
+    box-sizing: border-box;
+    color:#FFFFFF;
+    border: none;
+    background-color:rgb(60, 145, 112);
+    text-align:center;
+    transition: all 0.2s;
+    height: 25px;
+}
+
+.disable {
+    display:inline-block;
+    border-radius:2em;
+    padding:0.3em 1.2em;
+    box-sizing: border-box;
+    color:rgb(126, 126, 126);
+    border: none;
+    background-color:rgb(197, 224, 196);
+    text-align:center;
+    transition: all 0.2s;
+    height: 25px;
+}
+
+.disable:hover {
+    cursor: not-allowed;
+}
+.btn:hover {
+    background: rgb(82, 197, 155);
+    cursor: pointer;
 }
