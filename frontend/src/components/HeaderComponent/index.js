@@ -3,7 +3,7 @@ import './index.css';
 
 const HelloComponent = () => (
   <div className="header-box">
-    <h2>project-test</h2>
+    <h2>Projeto Card</h2>
   </div>
 );
 
